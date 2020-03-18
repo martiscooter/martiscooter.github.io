@@ -1,0 +1,574 @@
+/* GENERAL SETTİNGS */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+
+
+html,body {
+  font-family: 'Oswald',sans-serif;
+  font-size:1em;
+  letter-spacing: 0.1em;
+}
+
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+  } 
+  .btn:focus, .btn:active {
+	outline: none !important;
+	box-shadow: none !important;
+  }
+
+
+  /* GENERAL SETTİNGS END */
+
+
+
+  /* NAVBAR */
+
+#mainNav {
+  background-color: white;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 0.8em;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #9FEB4C;
+}
+
+#mainNav .navbar-toggler:focus{
+  outline: none;
+  box-shadow: none !important;
+}
+
+
+#mainNav .navbar-brand {
+  color: #9FEB4C;
+  font-weight: bold;
+  font-size: 2em;
+ }
+
+
+ .navbar .container img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+ }
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #9FEB4C;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: bold;
+  padding: 0.75em 0 1em;
+  letter-spacing: 1px;
+  color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  line-height:5px;
+  width: 100%;
+  }
+
+
+
+  @media only screen and (max-width: 991px)
+{
+  #mainNav .navbar-nav {
+    margin-top: 10px;
+   }
+   #mainNav .navbar-nav .nav-item .nav-link  {
+     padding: 0.75em 0.5em 1em;
+     width: 30%;
+     margin-top: 0.5em;
+   }
+
+}
+
+
+@media only screen and (max-width: 540px)
+{
+  #mainNav .navbar-nav {
+    margin-top: 10px;
+   }
+   #mainNav .navbar-nav .nav-item .nav-link  {
+     padding: 0.75em 0.5em 1em;
+     width: 40%;
+     margin-top: 0.5em;
+   }
+  
+   #mainNav.navbar-shrink {
+    background-color: white;
+    box-shadow: 5px 5px 20px #d3d3d3;
+  }
+
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+  border: 2px solid #9FEB4C;
+  border-radius: 20px;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: white;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.9em;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em;
+    margin-top: 0.5em;
+   
+  }
+ 
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+    box-shadow: 5px 5px 20px #d3d3d3;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+    padding: 12px 0;
+    font-weight: bold;
+  }
+}
+
+
+/* NAVBAR END */
+
+
+
+/* SLİDER */
+
+.slider{
+  position: relative;
+  height:100vh;
+}
+
+.slider h1{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.slider p{
+  font-weight: bold;
+}
+
+.button-app-store{
+    background-color: #9FEB4C;
+    border: 2px solid #9FEB4C;
+    border-radius:10px;
+    color:white;
+    font-weight: bold; 
+}
+
+.button-app-store:hover{
+  color:#9FEB4C;
+  background-color: white;
+}
+
+.button-google-play{
+  background-color: white;
+  border: 2px solid #9FEB4C;
+  border-radius:10px;
+  color:#9FEB4C;
+  font-weight: bold; 
+}
+
+.button-google-play:hover{
+  color:white;
+  background-color: #9FEB4C;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider{
+    padding-top: 25%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .slider{
+    padding-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slider{
+    padding-top: 10%;
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+  .slider{
+    padding-top: 20%;
+  }
+} 
+
+@media only screen and (min-width: 1200px) {
+  .slider{
+    padding-top: 10%;
+  }
+}
+
+
+/* SLİDER END */
+
+
+/* NASIL ÇALIŞIR */
+
+
+.boxes .row .card{
+  padding: 1em;
+   margin-bottom: 2.5rem; 
+   width: 100vw;
+   height: 65vh;
+   
+   
+ }
+
+ @media only screen and (max-width: 449px) {
+  .boxes .row .card{
+    width: 60vw;
+    height: 60vh;
+  } 
+}
+
+@media only screen and (min-width: 600px) {
+  .boxes .row .card{
+    width: 40vw;
+    height: 40vh;
+  } 
+}
+
+@media only screen and (min-width: 768px) {
+  .boxes .row .card{
+    width: 40vw;
+    height: 40vh;
+  } 
+} 
+
+@media only screen and (min-width: 992px) {
+  .boxes .row .card{
+    width: 50vw;
+    height: 50vh;
+  }
+} 
+
+.boxes h1{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.boxes .row hr{
+    border:2px solid #9FEB4C;
+    width: 10%;
+}
+ 
+.card{ 
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+  transition: 0.3s all;
+}
+
+.card:hover{
+  box-shadow:0px 50px 50px #f1f1f1;
+  z-index:100;
+  transform: translate(0, -10px);
+  }
+
+.card-body {
+   padding: 0.4rem;
+   text-align: center;
+}
+ 
+.card .card-body h5{
+     font-size: 1em;
+     font-weight: bold;
+}
+
+.card .card-body p{
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #CBCBCB;
+}
+
+.card-img-top {
+   width: 100%;
+   height: 60%;
+   object-fit: contain;
+}
+
+/* NASIL ÇALIŞIR END */
+
+
+
+
+/* NEDEN MİKROMOBİLİTE */
+
+.mikromobilite{
+  padding: 1rem;
+}
+
+.mikromobilite img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mikromobilite h1{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+.mikromobilite p{
+   margin-top: 1.5em;
+   font-weight: 500;
+}
+
+.mikromobilite .row hr{
+  border:2px solid #9FEB4C;
+  width: 10%;
+}
+
+
+
+/* NEDEN MİKROMOBİLİTE END */
+
+
+
+
+
+/* SORUMLULUKLAR */
+
+#sorumluluklar{
+  padding: 1rem;
+}
+
+#sorumluluklar h1{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#sorumluluklar h2{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#sorumluluklar .row hr{
+  border:2px solid #9FEB4C;
+  width: 10%;
+}
+
+#sorumluluklar span{
+  background-color: #9FEB4C;
+  color:white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+  border: 1px solid #9FEB4C;
+  border-radius: 50px;
+}
+
+#sorumluluklar .col-lg-12 .row{
+   padding: 1rem;
+}
+
+
+
+
+
+/* SORUMLULUKLAR END */
+
+
+
+
+/* YARDIM */
+
+
+
+
+#yardim h1{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#yardim h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+#yardim p{
+  text-align: center;
+  font-size: 1.1em;
+}
+
+
+#yardim .row hr{
+  border:2px solid #9FEB4C; 
+  width: 5%;
+}
+
+
+.form{
+  box-shadow: 5px 5px 20px #f1f1f1;
+}
+
+.form form{
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .form form{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .form form{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form form{
+    width: 100%;
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+  .form form{
+    width: 70%;
+  }
+} 
+
+
+
+
+.form-group .btn-gonder{
+     background-color: #9FEB4C;
+     color: white;
+     width: 100%;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: none !important;
+  border-color: black !important;
+}
+
+textarea:focus{
+  outline: none;
+  box-shadow: none !important;
+  border-color: black !important;
+}
+
+/* YARDIM END */
+
+
+
+/* FOOTER */
+
+.footer{
+   padding: 20px;
+}
+
+.footer p{
+    color:#CBCBCB;
+}
+
+.footer .fab{
+  color:#CBCBCB;
+  padding: 5px;
+}
+
+.footer .fab:hover{
+  color:#9FEB4C;
+}
+
+
+.footer .copyright{
+  display: flex;
+  justify-content: start;
+}
+
+.footer .social-icons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .footer .copyright{
+    display: flex;
+    justify-content: center;
+  }
+  .footer .social-icons{
+    display: flex;
+    justify-content: center;
+ }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer .copyright{
+    display: flex;
+    justify-content: start;
+  }
+  .footer .social-icons{
+    display: flex;
+    justify-content: flex-end;
+ }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer .copyright{
+    display: flex;
+    justify-content: start;
+  }
+  .footer .social-icons{
+    display: flex;
+    justify-content: flex-end;
+ }
+} 
+
+@media only screen and (min-width: 992px) {
+  .footer .copyright{
+    display: flex;
+    justify-content: start;
+  }
+  .footer .social-icons{
+    display: flex; 
+    justify-content: flex-end;
+ } 
+} 
+
+/* FOOTER END */
